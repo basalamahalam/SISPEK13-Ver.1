@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #d9d9d9;
+    scroll-behavior: smooth;
+}
+
+.top-card {
+    width: 50%;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 3px 4px 5px rgba(0,0,0,0.4);
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-card-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.top-card h4 {
+    text-align: center;
+    color: #C63C24;
+    padding-bottom: 10px;
+}
+
+.top-card-desc{
+    padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.from, .for, .say {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+label {
+  margin-top: 17px;
+  font-weight: bold;
+}
+
+input[type="password"],
+input[type="email"],
+textarea {
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: #d9d9d9;
+}
+
+textarea {
+    height: 100px;
+}
+
+.line {
+    height: 2px;
+    border-width: 5;
+    color: black;
+    background-color: black
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-card {
+        width: 80%;
+    }
+    .from, .for, .say {
+        display: block;
+    }
+    .top-card-title{
+        font-size: 35px;
+        padding-top: 1rem;
+    }
+
+    .line {
+        border-width: 2;
+    }
+
+    label {
+        margin-left: .4rem;
+    }
+
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        width: 98%;
+    }
+  }
+
+.btn-box {
+    text-align: end;
+}
+
+.btn-send{
+    background-color: #FFE54C;
+    padding: 7px 15px;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.4);
+    border: none;
+}
+
+.btn-box a:hover{
+    background-color: #bcad58;
+    transform: scale(1.1);
+    /* color: #FFE54C; */
+  }
